@@ -36,7 +36,7 @@ let answerFive = prompt ('Am I your favorite idol of all? y/n').toLowerCase();
 // console.log(answerOne);
 if (answerFive === 'yes' || answerFive === 'y'){
   alert (`Yeah you have taste, ${userName}.`);
-} else alert(`"No way, I\'m in Laurence\'s site..." ${userName}! Wow, you\'re so star-struck.`);
+} else alert(`"No way, I\'m in Laurence\'s site..." ${userName}! Wow, you\'re like star-struck.`);
 
 
 
