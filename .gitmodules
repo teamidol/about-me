@@ -1,0 +1,3 @@
+[submodule "about-me"]
+     path = about-me
+     url = https://github.com/teamidol/about-me.git
