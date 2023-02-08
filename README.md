@@ -9,7 +9,7 @@ I'm building an app for the purpose of....
 **Links and Resources:**
 
 **Lighthouse Accessibility Score:** 
-(screenshot)....  ![score](img/test-img-for-md.png)
+(screenshot)....  ![score](img/test-img-for-readme.png)
 
 **Reflections and Comments..."
 
