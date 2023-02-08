@@ -11,6 +11,6 @@ I'm building an app for the purpose of....
 **Lighthouse Accessibility Score:** 
 (screenshot)....  ![score](img/lighthouse-rating.png)
 
-**Reflections and Comments..."
+**Reflections and Comments...."
 
 (include answers to daily journal and submission questions here)
