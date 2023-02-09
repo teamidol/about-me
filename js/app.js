@@ -55,7 +55,7 @@ if (answerFive === 'yes' || answerFive === 'y'){
 // questionSix() needs debugging as it won't proceed after correct answer
 
 
-function questionSix() {
+function secondChild() {
   let maxNumberOfAnswer = 0;
   while (maxNumberOfAnswer < 4) {
     let answerSix = prompt('Of 9 children what number am I?');
@@ -83,7 +83,7 @@ function questionSix() {
 
 }
 
-questionSix();
+secondChild();
 
 
 
@@ -103,7 +103,7 @@ questionSix();
 // }
 //                              ( start )
 let answerSeven = [];
-answerSeven.push(prompt('Which ones of the classmates in the list are actually staffs, pretending to be students? .... Dajon, Dasha, Nicholas, Reece, Ryan, Laurence.').toLowerCase());
+answerSeven.push(prompt('Which ones of the classmates in the list are actually staffs, pretending to be students? .... Alex, Dajon, Dasha, Nicholas, Reece, Ryan, Laurence.').toLowerCase());
 
 let userGuess = 5;
 while (1 <= userGuess) {
@@ -112,8 +112,8 @@ while (1 <= userGuess) {
   console.log('guess', answerSeven);
 }
 for (let i = 0; i < answerSeven.length; i++) {
-  if (answerSeven[i] === 'dajon' || answerSeven[i] === 'dasha' || answerSeven[i] === 'nicholas' || answerSeven[i] === 'reece' || answerSeven[i] === 'ryan') {
-    alert('Dajon, Dasha, Nicholas, Reece, or Ryans is correct.');
+  if (answerSeven[i] === 'Alex' || answerSeven[i] === 'dajon' || answerSeven[i] === 'dasha' || answerSeven[i] === 'nicholas' || answerSeven[i] === 'reece' || answerSeven[i] === 'ryan') {
+    alert('Alex, Dajon, Dasha, Nicholas, Reece, or Ryans is correct.');
     counter++;
   } else if (answerSeven[i] !== randoStrNum) {
     alert('Your guess of ${answerSeven[i] was not right.');
