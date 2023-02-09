@@ -51,29 +51,42 @@ if (answerFive === 'yes' || answerFive === 'y'){
 //vvvvvvvvvvvv  ( class03 instr 2) vvvvvvvvvvvvvvv
 
 
-function questionSix() {
-  let answerSix = prompt('Of 9 children what number am I?');
-  let answerSixB = parseInt(answerSix);
-  console.log(answerSixB);
 
-  if (answerSixB < 2) {
-    alert('It\'s higher. You have a total of 4 tries.');
-  } else if (answerSixB > 2) {
-    alert('It\'s lower. You have a total of 4 tries.');
-  } else {
-    alert('You\'re such a big fan of mine.');
-    maxNumberofAnswer=4;
-    counter++;
+// questionSix() needs debugging as it won't proceed after correct answer
+
+
+function questionSix() {
+  let maxNumberOfAnswer = 0;
+  while (maxNumberOfAnswer < 4) {
+    let answerSix = prompt('Of 9 children what number am I?');
+    let answerSixB = parseInt(answerSix);
+    console.log(answerSixB);
+
+
+    if (answerSixB < 2) {
+      alert('It\'s higher. You have a total of 4 tries.');
+    } else if (answerSixB > 2) {
+      alert('It\'s lower. You have a total of 4 tries.');
+    } else {
+      alert('You\'re such a big fan of mine.');
+      counter++;
+      break;
+    }
+    maxNumberOfAnswer++;
+  
   }
+  // if statment here
+  if ( maxNumberOfAnswer === 4){
+    alert('You\'re gibberish, star-struck fan. Answer is 2.');
+
+  }
+
 }
 
-let maxNumberOfAnswer = 0;
+questionSix();
 
-while(maxNumberOfAnswer < 4 ){
-  maxNumberOfAnswer++;
-  questionSix();}
 
-alert('You\'re gibberish star-struck fan. Answer is 2.');
+
 
 // vvvvvvvvvvvvvvvv (my class 3 instr 3) vvvvvvvvvvvvvv
 
@@ -100,7 +113,7 @@ while (1 <= userGuess) {
 }
 for (let i = 0; i < answerSeven.length; i++) {
   if (answerSeven[i] === 'dajon' || answerSeven[i] === 'dasha' || answerSeven[i] === 'nicholas' || answerSeven[i] === 'reece' || answerSeven[i] === 'ryan') {
-    alert('Dajon, Dasha, Nicholas, Reece, or Ryan is correct.');
+    alert('Dajon, Dasha, Nicholas, Reece, or Ryans is correct.');
     counter++;
   } else if (answerSeven[i] !== randoStrNum) {
     alert('Your guess of ${answerSeven[i] was not right.');
@@ -109,7 +122,7 @@ for (let i = 0; i < answerSeven.length; i++) {
 
 
 
-alert (`Thank for visiting my site ${userName}. You got ${counter} idol points with the questions.`);
+alert(`Thank for visiting my site ${userName}. You got ${counter} idol points with the questions.`);
 
 //                                ( end )
 
