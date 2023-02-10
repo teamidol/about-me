@@ -2,45 +2,44 @@
 let counter = 0
 // vvvvvvvvvvvvvvvvvv ( class 02 ) vvvvvvvvvvvvvvvvvv
 // get username, prompt
-let userName = prompt ('Hey, what\'s your name?');
+let userName = prompt('Hey, what\'s your name?');
 alert('Please keep calm, ' + userName + '.');
-
 
 
 // 5  yes/no questions with alert if correct or incorrect
 
-let answerOne = prompt ('Did you know I can read minds? yes/no').toLowerCase();
+let answerOne = prompt('Did you know I can read minds? yes/no').toLowerCase();
 // console.log(answerOne);
-if (answerOne === 'yes' || answerOne === 'y'){
-  alert ('You\'re right!');
+if (answerOne === 'yes' || answerOne === 'y') {
+  alert('You\'re right!');
   counter++;
-} else alert('Uh, you\'d be wrong... coz I can.' );
+} else alert('Uh, you\'d be wrong... coz I can.');
 
-let answerTwo = prompt ('Do you wish you\'re awesome? y/n').toLowerCase();
+let answerTwo = prompt('Do you wish you\'re awesome? y/n').toLowerCase();
 // console.log(answerOne);
-if (answerTwo === 'yes' || answerTwo === 'y'){
-  alert ('Of course, you do.');
+if (answerTwo === 'yes' || answerTwo === 'y') {
+  alert('Of course, you do.');
   counter++;
 } else alert('I can read your mind. No, you wish you\'re awesome.');
 
-let answerThree = prompt ('Do you want to be like me? y/n').toLowerCase();
+let answerThree = prompt('Do you want to be like me? y/n').toLowerCase();
 // console.log(answerOne);
-if (answerThree === 'yes' || answerThree === 'y'){
-  alert ('You\'re smart.');
+if (answerThree === 'yes' || answerThree === 'y') {
+  alert('You\'re smart.');
   counter++;
 } else alert('Don\'t be condescending of my greatness.');
 
-let answerFour = prompt ('Are you a big fan of mine? y/n').toLowerCase();
+let answerFour = prompt('Are you a big fan of mine? y/n').toLowerCase();
 // console.log(answerOne);
-if (answerFour === 'yes' || answerFour === 'y'){
-  alert ('Yeah, I know.');
+if (answerFour === 'yes' || answerFour === 'y') {
+  alert('Yeah, I know.');
   counter++;
 } else alert('No, you are. I can read "Laurence Fan" on your forehead.');
 
-let answerFive = prompt ('Am I your favorite idol of all? y/n').toLowerCase();
+let answerFive = prompt('Am I your favorite idol of all? y/n').toLowerCase();
 // console.log(answerOne);
-if (answerFive === 'yes' || answerFive === 'y'){
-  alert (`Yeah you have taste, ${userName}.`);
+if (answerFive === 'yes' || answerFive === 'y') {
+  alert(`Yeah you have taste, ${userName}.`);
   counter++;
 } else alert(`"No way, I\'m in Laurence\'s site..." ${userName}! Wow, you\'re like star-struck.`);
 
@@ -73,10 +72,9 @@ function secondChild() {
       break;
     }
     maxNumberOfAnswer++;
-  
   }
   // if statment here
-  if ( maxNumberOfAnswer === 4){
+  if (maxNumberOfAnswer === 4) {
     alert('You\'re gibberish, star-struck fan. Answer is 2.');
 
   }
@@ -102,33 +100,29 @@ secondChild();
 //   }
 // }
 //                              ( start )
-let answerSeven = [];
-answerSeven.push(prompt('Which ones of the classmates in the list are actually staffs, pretending to be students? .... Alex, Dajon, Dasha, Nicholas, Reece, Ryan, Laurence.').toLowerCase());
+let fakeStudents = ['Alex', 'Dajon', 'Dasha', 'Nicholas', 'Reece', 'Ryans'];
 
-let userGuess = 5;
-while (1 <= userGuess) {
-  userGuess--;
-  answerSeven.push(prompt('Type another name.').toLowerCase());
-  console.log('guess', answerSeven);
-}
-for (let i = 0; i < answerSeven.length; i++) {
-  if (answerSeven[i] === 'Alex' || answerSeven[i] === 'dajon' || answerSeven[i] === 'dasha' || answerSeven[i] === 'nicholas' || answerSeven[i] === 'reece' || answerSeven[i] === 'ryan') {
-    alert('Alex, Dajon, Dasha, Nicholas, Reece, or Ryans is correct.');
-    counter++;
-  } else if (answerSeven[i] !== randoStrNum) {
-    alert('Your guess of ${answerSeven[i] was not right.');
+for (let i = 0; i < 6; i++) {
+
+  let answerSeven = prompt('Which ones of the classmates in the list are actually staffs, pretending to be students? .... Alex, Dajon, Dasha, Nicholas, Reece, Ryans, Laurence.').toLowerCase();
+
+  for (let j = 0; j < fakeStudents.length; j++) {
+    if (answerSeven === fakeStudents[j]) {
+      alert('Obviously, eh? Who else?');
+      i = 5;
+    }
   }
 }
 
-
-
+alert('Alex, Dajon, Dasha, Nicholas, Reece, or Ryans is correct');
+counter++;
 alert(`Thank for visiting my site ${userName}. You got ${counter} idol points with the questions.`);
 
 //                                ( end )
 
 // ^^^^^^^^^^^^^^^^^^^ (my class3 instr 3) ^^^^^^^^^^^^^
 
-//vvvvvvvvvvvvv ( cam code class 3 instr 3) vvvvvvvvvvvvvvvvv
+//vvvvvvvvvvvvv ( cam code class 3 instr 3) vvvvvvvvvvvvvvvvv     
 
 // // Guess words from user array loop
 // let userGuessArray2 = [];
@@ -185,3 +179,22 @@ alert(`Thank for visiting my site ${userName}. You got ${counter} idol points wi
 
 //^^^^^^^^^^^^^^ (dajon code class 3 instr 3) ^^^^^^^^^^^^^^
 
+
+//vvvvvvvvvvvvvvvvvvv ( wasn't working right ) vvvvvvvvvvvvvvv
+// let fakeStudents = ['Alex', 'Dajon', 'Dasha', 'Nicholas', 'Reece', 'Ryans'];
+
+// for (let i = 0; i < 6; i++) {
+
+//   let answerSeven = prompt('Which ones of the classmates in the list are actually staffs, pretending to be students? .... Alex, Dajon, Dasha, Nicholas, Reece, Ryans, Laurence.').toLowerCase();
+
+//   for (let j = 0; j < fakeStudents.length; j++) {
+//     if (answerSeven === fakeStudents[j]) {
+//       alert('Obviously, eh? Who else?');
+
+//       break;
+//     }
+//   }
+// }
+// alert('Alex, Dajon, Dasha, Nicholas, Reece, or Ryans is correct');
+
+// alert(`Thank for visiting my site ${userName}. You got ${counter} idol points with the questions.`);
