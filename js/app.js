@@ -27,7 +27,7 @@ let answerThree = prompt('Do you want to be like me? y/n').toLowerCase();
 if (answerThree === 'yes' || answerThree === 'y') {
   alert('You\'re smart.');
   counter++;
-} else alert('Don\'t be condescending of my greatness.');
+} else alert('Don\'t be condescending to yourself because of my greatness.');
 
 let answerFour = prompt('Are you a big fan of mine? y/n').toLowerCase();
 // console.log(answerOne);
