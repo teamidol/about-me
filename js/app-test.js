@@ -1,28 +1,49 @@
 'use strict';
 
-let userName = prompt('What\'s your name?');
+let fakeStudents = ['alex', 'dajon', 'dasha', 'nicholas', 'reece', 'ryans'];
 
-let counter = 0;
-
-let fakeStudents = ['Alex', 'Dajon', 'Dasha', 'Nicholas', 'Reece', 'Ryans'];
-
-for (let i = 0; i < 6; i++) {
+for(let i = 0; i < 6; i++) {
 
   let answerSeven = prompt('Which ones of the classmates in the list are actually staffs, pretending to be students? .... Alex, Dajon, Dasha, Nicholas, Reece, Ryans, Laurence.').toLowerCase();
 
-  for (let j = 0; j < fakeStudents.length; j++) {
-    if (answerSeven === fakeStudents[j]) {
-      alert('Obviously, eh? Who else?');
-
-      break;
+  for(let j = 0; j < fakeStudents.length; j++){
+    if(answerSeven === fakeStudents[j]) {
+      alert('Yup, obviously bad acting.');
+     // i = 5;
+     // break;
     }
   }
 }
+
 alert('Alex, Dajon, Dasha, Nicholas, Reece, or Ryans is correct');
 
-alert(`Thank for visiting my site ${userName}. You got ${counter} idol points with the questions.`);
+//   vvvvvvvvvvvvvvvvvvvvvvv ( previous, maybe a duplicate ) vvvvvvvvvvvvvvvvvvvvvvv
+// let userName = prompt('What\'s your name?');
+
+// let counter = 0;
+
+// let fakeStudents = ['Alex', 'Dajon', 'Dasha', 'Nicholas', 'Reece', 'Ryans'];
+
+// for (let i = 0; i < 6; i++) {
+
+//   let answerSeven = prompt('Which ones of the classmates in the list are actually staffs, pretending to be students? .... Alex, Dajon, Dasha, Nicholas, Reece, Ryans, Laurence.').toLowerCase();
+
+//   for (let j = 0; j < fakeStudents.length; j++) {
+//     if (answerSeven === fakeStudents[j]) {
+//       alert('Obviously, eh? Who else?');
+
+//       break;
+//     }
+//   }
+// }
+// alert('Alex, Dajon, Dasha, Nicholas, Reece, or Ryans is correct');
+
+// alert(`Thank for visiting my site ${userName}. You got ${counter} idol points with the questions.`);
+
+//     ^^^^^^^^^^^^^^^^^^^^^^^^^ ( previous, maybe a duplictate ) ^^^^^^^^^^^^^^^^^
 
 
+//    vvvvvvvvvvvvvvvvvvvvvvv ( i think this was cam's ) vvvvvvvvvvvvvvvvvvv
 // let answerSeven = [];
 // answerSeven.push(prompt('Which ones of the classmates in the list are actually staffs, pretending to be students? .... Alex, Dajon, Dasha, Nicholas, Reece, Ryan, Laurence.').toLowerCase());
 
@@ -44,3 +65,5 @@ alert(`Thank for visiting my site ${userName}. You got ${counter} idol points wi
 
 
 // alert(`Thank for visiting my site ${userName}. You got ${counter} idol points with the questions.`);
+
+//   ^^^^^^^^^^^^^^^^^^^^^ ( i think this was cam's ) ^^^^^^^^^^^^^^^^^^^

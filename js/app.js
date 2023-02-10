@@ -27,21 +27,21 @@ let answerThree = prompt('Do you want to be like me? y/n').toLowerCase();
 if (answerThree === 'yes' || answerThree === 'y') {
   alert('You\'re smart.');
   counter++;
-} else alert('Don\'t be condescending to yourself because of my greatness.');
+} else alert('Don\'t be condescending to yourself and rationalize because of my greatness.');
 
 let answerFour = prompt('Are you a big fan of mine? y/n').toLowerCase();
 // console.log(answerOne);
 if (answerFour === 'yes' || answerFour === 'y') {
   alert('Yeah, I know.');
   counter++;
-} else alert('No, you are. I can read "Laurence Fan" on your forehead.');
+} else alert('Nah, you actually are. I can read "Laurence Fan" on your forehead.');
 
 let answerFive = prompt('Am I your favorite idol of all? y/n').toLowerCase();
 // console.log(answerOne);
 if (answerFive === 'yes' || answerFive === 'y') {
   alert(`Yeah you have taste, ${userName}.`);
   counter++;
-} else alert(`"No way, I\'m in Laurence\'s site..." ${userName}! Wow, you\'re like star-struck.`);
+} else alert(`"No... way, I\'m in Laurence\'s site... " ${userName}! Wow, you\'re like star-struck.`);
 
 //alert final message with username
 
@@ -100,23 +100,25 @@ secondChild();
 //   }
 // }
 //                              ( start )
-let fakeStudents = ['Alex', 'Dajon', 'Dasha', 'Nicholas', 'Reece', 'Ryans'];
+let fakeStudents = ['alex', 'dajon', 'dasha', 'nicholas', 'reece', 'ryans'];
 
-for (let i = 0; i < 6; i++) {
+for(let i = 0; i < 6; i++) {
 
   let answerSeven = prompt('Which ones of the classmates in the list are actually staffs, pretending to be students? .... Alex, Dajon, Dasha, Nicholas, Reece, Ryans, Laurence.').toLowerCase();
 
-  for (let j = 0; j < fakeStudents.length; j++) {
-    if (answerSeven === fakeStudents[j]) {
-      alert('Obviously, eh? Who else?');
-      i = 5;
+  for(let j = 0; j < fakeStudents.length; j++){
+    if(answerSeven === fakeStudents[j]) {
+      alert('Yup... obviously bad acting.');
+     // i = 5;
+     // break;
     }
   }
 }
 
 alert('Alex, Dajon, Dasha, Nicholas, Reece, or Ryans is correct');
 counter++;
-alert(`Thank for visiting my site ${userName}. You got ${counter} idol points with the questions.`);
+
+alert(`Thank for visiting my site  ${userName}. You got ${counter} idol points for your answers.`);
 
 //                                ( end )
 
